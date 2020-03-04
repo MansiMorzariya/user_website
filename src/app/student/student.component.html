@@ -1,0 +1,11 @@
+<div class = "container-fluid" *ngFor="let s of stud_data;index as id">
+<img [src] = "s.imgUrl" class="img-fluid rounded-circle">
+<a [routerLink] = "['/student_details',id]"><h3 [title]="s.name">{{s.name}}</h3></a>
+<p [title]="s.local_id">Local Id:{{s.local_id}}</p>
+<p [title]="s.student_username"> Student Usernmae:{{s.student_username}}</p>
+<p>
+  <button class="btn btn-primary"(click)="share(s.name)">
+    Share
+  </button>
+</p><hr>
+</div>

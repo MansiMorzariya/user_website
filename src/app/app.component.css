@@ -1,0 +1,13 @@
+p {
+  font-family: Lato;
+}
+nav{
+  color:white;
+
+}
+a{
+  color:white;
+}
+.active{
+  background-color:gainsboro;
+}
